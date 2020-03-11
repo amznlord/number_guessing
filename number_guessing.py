@@ -28,7 +28,7 @@ secret_number = random.randint(range_from, range_to)
 difficulty = int(input("Zvol si počet životů: "))
 
 while life < difficulty:
-	print("Zadejte číslo od", range_from, "do", range_to)
+	print("Zadej číslo od", range_from, "do", range_to)
 	guess = int(input())
 
 	if guess == secret_number:
@@ -44,4 +44,4 @@ while life < difficulty:
 		life += 1
 
 	if life == difficulty:
-		print("Prohrá jsi, ale to se stává. Hledané číslo bylo:", secret_number, "\n")
+		print("Prohrál jsi, ale to se stává. Hledané číslo bylo:", secret_number, "\n")
